@@ -12,3 +12,10 @@ fn main(){
 ```
 
 # Q1 .Promt Olivia to input an integer n,calculate and display the sum of last two digit.
+
+# Q2 Two friends met after a long time and had a casual conversation.
+ -Create a  program to simulate this conversation using multiple printf statements by correctly using new lines and required spacing.
+ -The conversation is as follows: Hi Adam, how are you? Hi Eve, I am fine. How are you? I am fine. How's life going on
+ -Input format:
+ -Output format:
+ -The output displays the conversation using proper spacings and new lines as shown in the problem statement.
