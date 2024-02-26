@@ -12,12 +12,13 @@ pub fn getsum (num :i64) ->  i64 {
 
 }
 fn main () {
+    println!("Enter the number ");
     let mut num= String::new();
     io::stdin().read_line(&mut num).err();
    
     let num: i64 = num.trim().parse().expect("Please enter a valid number");
     let sum=getsum(num);
-    println!("{}",sum);
+    println!(" Your sum of last two digit is {}",sum);
 
  
 }
