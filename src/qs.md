@@ -85,3 +85,32 @@ println!("Your result is {:?}",result);
 
 
 ```
+# Generate Random Numbers 
+```Rust
+use rand::Rng;
+
+ fn main (){
+    let mut b: rand::prelude::ThreadRng = rand::thread_rng();
+    println!("The value is  {:?}",b.gen_range(0..200)); //Generate a random value in the given range.
+    println!("The value is {:?}",b.gen_ratio(0 , 10)); //Return a bool with a probability of numerator/denominator of being true. I.e. gen_ratio(2, 3) has chance of 2 in 3, or about 67%, of returning true. If numerator == denominator, then the returned value is guaranteed to be true. If numerator == 0, then the returned value is guaranteed to be false.
+    let n :u8 = b.gen();
+    let n4 :i8 = b.gen();
+    println!("The value is {}",n);
+    println!("The value is {}",n4);
+
+} 
+``` 
+# Sort 
+```Rust
+use rand::Rng;
+fn main (){
+    let mut b = vec![4,-5,6];
+    b.sort(); //This sort is stable (i.e., does not reorder equal elements) and O(n * log(n)) worst-case.
+
+    println!("The value is  {:?}",b);
+   
+
+}
+```
+# Command Line 
+
